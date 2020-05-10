@@ -1,0 +1,22 @@
+{
+  "name": "crypt",
+  "version": "1.0.0",
+  "description": "Easy encryption and decryption",
+  "main": "crypt.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hugovidafe/Crypt.git"
+  },
+  "keywords": [
+    "Encryption"
+  ],
+  "author": "Hugo Vidal <Hugo.vidal.ferre@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hugovidafe/Crypt/issues"
+  },
+  "homepage": "https://github.com/Hugovidafe/Crypt#readme",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
