@@ -1,6 +1,7 @@
 'use strict';
 
-const crypto = require('crypto')
+const crypto = require('crypto');
+const { isObject } = require('util');
 
 /**
  * Easy encryption and decryption.
@@ -25,7 +26,7 @@ class Crypt {
 	 */
 
 	encrypt(toEncrypt) {
-		const text = JSON.stringify(toEncrypt)
+		const text = toEncrypt !== null && typeof toEncrypt === 'object'? JSON.stringify(toEncrypt): toEncrypt;
 		const cipher = crypto.createCipher(this.algorithm, this.password)
 		var crypted = cipher.update(text, 'utf8', 'hex')
 		crypted += cipher.final('hex')
