@@ -4,6 +4,7 @@
 
 Remastering of the package "json-encrypt" published by [arsandev](https://github.com/arsandev)
 
-## TODO
+## Todo list
 
-[] Typescript
+- [x] Not only encrypt object
+- [ ] Typescript
